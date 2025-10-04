@@ -476,9 +476,9 @@ export default function Home() {
               </div>
               
               <p className="text-gray-200 mb-6 leading-relaxed">
-                "My English tutor Maria helped me overcome my fear of 
+                &quot;My English tutor Maria helped me overcome my fear of 
                 writing essays. Now I actually enjoy creative writing! The 
-                platform made it so easy to find the right match."
+                platform made it so easy to find the right match.&quot;
               </p>
               
               <div className="flex items-center">
@@ -507,9 +507,9 @@ export default function Home() {
               </div>
               
               <p className="text-gray-200 mb-6 leading-relaxed">
-                "As a tutor on AYB Tutoring, I love how the platform connects 
+                &quot;As a tutor on AYB Tutoring, I love how the platform connects 
                 me with motivated students. The scheduling and payment 
-                system makes everything seamless."
+                system makes everything seamless.&quot;
               </p>
               
               <div className="flex items-center">
@@ -538,9 +538,9 @@ export default function Home() {
               </div>
               
               <p className="text-gray-200 mb-6 leading-relaxed">
-                "The flexibility to choose tutors based on my schedule and 
+                &quot;The flexibility to choose tutors based on my schedule and 
                 budget is amazing. My Spanish tutor Carlos fits perfectly with 
-                my busy college life."
+                my busy college life.&quot;
               </p>
               
               <div className="flex items-center">
@@ -569,9 +569,9 @@ export default function Home() {
               </div>
               
               <p className="text-gray-200 mb-6 leading-relaxed">
-                "AYB Tutoring allows me to continue teaching and helping 
-                students after retirement. The platform's tools make online 
-                tutoring effective and engaging."
+                &quot;AYB Tutoring allows me to continue teaching and helping 
+                students after retirement. The platform&apos;s tools make online 
+                tutoring effective and engaging.&quot;
               </p>
               
               <div className="flex items-center">
@@ -671,7 +671,7 @@ export default function Home() {
             
             {/* Section Heading */}
             <h2 className="text-4xl font-bold text-gray-800 mb-6">
-              We're Here to Help
+              We&apos;re Here to Help
             </h2>
             
             {/* Description */}
