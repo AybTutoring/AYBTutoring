@@ -66,14 +66,19 @@ const features = [
 ];
 
 export function FeatureCardsWithScrollAnimation() {
+  const refs = features.map(() => React.createRef());
+  const inViews = refs.map(ref => {
+    const [inViewRef, inView] = useInView({ threshold: 0.2 });
+    return { inViewRef, inView };
+  });
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {features.map((feature, idx) => {
-        const [ref, inView] = useInView({ threshold: 0.2 });
+        const { inViewRef, inView } = inViews[idx];
         return (
           <div
             key={feature.title}
-            ref={ref}
+            ref={inViewRef}
             className={`bg-gray-800 rounded-xl p-6 text-white transition-all duration-700 ${inView ? 'animate-fade-in-up opacity-100' : 'opacity-0 translate-y-8'}`}
             style={{ animationDelay: `${idx * 0.1}s` }}
           >
