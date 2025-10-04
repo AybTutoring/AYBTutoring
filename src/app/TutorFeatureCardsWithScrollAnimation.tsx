@@ -53,26 +53,42 @@ const tutorFeatures = [
   },
 ];
 
-export function TutorFeatureCardsWithScrollAnimation() {
+function TutorFeatureCardsWithScrollAnimation() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 items-stretch">
-      {tutorFeatures.map((feature, idx) => {
-        const [ref, inView] = useInView({ threshold: 0.2 });
-        return (
-          <div
-            key={feature.title}
-            ref={ref}
-            className={`bg-gray-800 rounded-xl p-6 text-white transition-all duration-700 flex flex-col justify-between min-h-[300px] ${inView ? 'animate-fade-in-up opacity-100' : 'opacity-0 translate-y-8'}`}
-            style={{ animationDelay: `${idx * 0.1}s` }}
-          >
-            <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
-              {feature.icon}
-            </div>
-            <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
-            <p className="text-gray-300">{feature.description}</p>
-          </div>
-        );
-      })}
+      {tutorFeatures.map((feature, idx) => (
+        <TutorFeatureCardWithAnimation key={feature.title} feature={feature} idx={idx} />
+      ))}
+    </div>
+  );
+}
+
+export { TutorFeatureCardsWithScrollAnimation };
+
+type TutorFeature = {
+  title: string;
+  description: string;
+  icon: React.ReactNode;
+};
+
+interface TutorFeatureCardWithAnimationProps {
+  feature: TutorFeature;
+  idx: number;
+}
+
+function TutorFeatureCardWithAnimation({ feature, idx }: TutorFeatureCardWithAnimationProps) {
+  const [ref, inView] = useInView({ threshold: 0.2 });
+  return (
+    <div
+      ref={ref}
+      className={`bg-gray-800 rounded-xl p-6 text-white transition-all duration-700 flex flex-col justify-between min-h-[300px] ${inView ? 'animate-fade-in-up opacity-100' : 'opacity-0 translate-y-8'}`}
+      style={{ animationDelay: `${idx * 0.1}s` }}
+    >
+      <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+        {feature.icon}
+      </div>
+      <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
+      <p className="text-gray-300">{feature.description}</p>
     </div>
   );
 }

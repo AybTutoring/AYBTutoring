@@ -65,26 +65,42 @@ const features = [
   },
 ];
 
-export function FeatureCardsWithScrollAnimation() {
+function FeatureCardsWithScrollAnimation() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {features.map((feature, idx) => {
-        const [ref, inView] = useInView({ threshold: 0.2 });
-        return (
-          <div
-            key={feature.title}
-            ref={ref}
-            className={`bg-gray-800 rounded-xl p-6 text-white transition-all duration-700 ${inView ? 'animate-fade-in-up opacity-100' : 'opacity-0 translate-y-8'}`}
-            style={{ animationDelay: `${idx * 0.1}s` }}
-          >
-            <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
-              {feature.icon}
-            </div>
-            <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
-            <p className="text-gray-300">{feature.description}</p>
-          </div>
-        );
-      })}
+      {features.map((feature, idx) => (
+        <FeatureCardWithAnimation key={feature.title} feature={feature} idx={idx} />
+      ))}
+    </div>
+  );
+}
+
+export { FeatureCardsWithScrollAnimation };
+
+type Feature = {
+  title: string;
+  description: string;
+  icon: React.ReactNode;
+};
+
+interface FeatureCardWithAnimationProps {
+  feature: Feature;
+  idx: number;
+}
+
+function FeatureCardWithAnimation({ feature, idx }: FeatureCardWithAnimationProps) {
+  const [ref, inView] = useInView({ threshold: 0.2 });
+  return (
+    <div
+      ref={ref}
+      className={`bg-gray-800 rounded-xl p-6 text-white transition-all duration-700 ${inView ? 'animate-fade-in-up opacity-100' : 'opacity-0 translate-y-8'}`}
+      style={{ animationDelay: `${idx * 0.1}s` }}
+    >
+      <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+        {feature.icon}
+      </div>
+      <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
+      <p className="text-gray-300">{feature.description}</p>
     </div>
   );
 }
