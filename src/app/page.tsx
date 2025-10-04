@@ -53,7 +53,7 @@ export default function Home() {
             {/* Description */}
             <p className="text-blue-100 text-lg mb-8 max-w-3xl mx-auto">
               Join thousands of students who have improved their grades and confidence with personalized 
-              tutoring. It's free to sign up and browse tutors.
+              tutoring. It&#39;s free to sign up and browse tutors.
             </p>
             
             {/* Action Buttons */}
@@ -147,7 +147,7 @@ export default function Home() {
           <div className="mt-16 text-center">
             <h3 className="text-2xl font-semibold text-gray-800 mb-12">How to Get Started</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center"><div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6"><span className="text-white text-2xl font-bold">1</span></div><h4 className="text-xl font-semibold text-gray-800 mb-4">Apply & Get Verified</h4><p className="text-gray-600 leading-relaxed">Submit your application with your qualifications and teaching experience. We'll verify your credentials.</p></div>
+              <div className="text-center"><div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6"><span className="text-white text-2xl font-bold">1</span></div><h4 className="text-xl font-semibold text-gray-800 mb-4">Apply &amp; Get Verified</h4><p className="text-gray-600 leading-relaxed">Submit your application with your qualifications and teaching experience. We&#39;ll verify your credentials.</p></div>
               <div className="text-center"><div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6"><span className="text-white text-2xl font-bold">2</span></div><h4 className="text-xl font-semibold text-gray-800 mb-4">Create Your Profile</h4><p className="text-gray-600 leading-relaxed">Build an attractive profile showcasing your expertise, set your rates, and upload a professional photo.</p></div>
               <div className="text-center"><div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6"><span className="text-white text-2xl font-bold">3</span></div><h4 className="text-xl font-semibold text-gray-800 mb-4">Start Teaching</h4><p className="text-gray-600 leading-relaxed">Get matched with students, schedule sessions, and start earning money doing what you love.</p></div>
             </div>
@@ -350,7 +350,7 @@ export default function Home() {
               <h3 className="text-2xl font-semibold mb-4 text-center">Book a Session</h3>
               <p className="text-gray-300 text-center leading-relaxed">
                 Schedule a session at your convenience. Many tutors offer 
-                free consultation calls to ensure they're the right fit for you.
+                free consultation calls to ensure they&#39;re the right fit for you.
               </p>
               
               {/* Arrow for desktop */}
@@ -414,9 +414,9 @@ export default function Home() {
               </div>
               
               <p className="text-gray-200 mb-6 leading-relaxed">
-                "My tutor Jessica helped me improve my calculus grades from 
+                &quot;My tutor Jessica helped me improve my calculus grades from 
                 C+ to A- in just one semester! Her explanations make complex 
-                concepts so much clearer."
+                concepts so much clearer.&quot;
               </p>
               
               <div className="flex items-center">
@@ -445,9 +445,9 @@ export default function Home() {
               </div>
               
               <p className="text-gray-200 mb-6 leading-relaxed">
-                "Found an amazing organic chemistry tutor through 
-                AYB Tutoring. Dr. Smith's step-by-step approach and practice 
-                problems were exactly what I needed for my pre-med studies."
+                &quot;Found an amazing organic chemistry tutor through 
+                AYB Tutoring. Dr. Smith&#39;s step-by-step approach and practice 
+                problems were exactly what I needed for my pre-med studies.&quot;
               </p>
               
               <div className="flex items-center">
