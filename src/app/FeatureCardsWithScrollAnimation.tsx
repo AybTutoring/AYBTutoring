@@ -96,11 +96,11 @@ function FeatureCardWithAnimation({ feature, idx }: FeatureCardWithAnimationProp
       className={`bg-gray-800 rounded-xl p-6 text-white transition-all duration-700 ${inView ? 'animate-fade-in-up opacity-100' : 'opacity-0 translate-y-8'}`}
       style={{ animationDelay: `${idx * 0.1}s` }}
     >
-      <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
-        {feature.icon}
+      <div className="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+        <span className="text-white">{feature.icon}</span>
       </div>
-      <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
-      <p className="text-gray-300">{feature.description}</p>
+      <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
+      <p className="text-base text-white">{feature.description}</p>
     </div>
   );
 }

@@ -11,8 +11,8 @@ export default function Home() {
           <div className="inline-block bg-yellow-300 text-blue-700 px-8 py-3 rounded-full text-lg font-semibold mb-8 shadow-md flex items-center justify-center gap-2 animate-bounce">
             <span role="img" aria-label="spark">✨</span> Connecting students with expert tutors
           </div>
-          <h1 className="text-6xl font-bold mb-8">
-            <span className="text-white">Find Your Perfect Tutor Today</span>
+          <h1 className="text-6xl font-bold mb-8 text-black">
+            <span>Find Your Perfect Tutor Today</span>
           </h1>
           <p className="text-xl text-blue-800 mb-12 max-w-4xl mx-auto leading-relaxed">
             Connect with qualified tutors in minutes. Whether you need help with math, science, languages, or any subject, our platform matches you with the perfect tutor for personalized 1-on-1 learning.
@@ -46,12 +46,12 @@ export default function Home() {
             </div>
             
             {/* Section Heading */}
-            <h2 className="text-4xl font-bold text-white mb-6">
+            <h2 className="text-4xl font-bold text-black mb-6">
               Find Your Perfect Tutor Today
             </h2>
             
             {/* Description */}
-            <p className="text-blue-100 text-lg mb-8 max-w-3xl mx-auto">
+            <p className="text-blue-700 text-lg mb-8 max-w-3xl mx-auto">
               Join thousands of students who have improved their grades and confidence with personalized 
               tutoring. It&#39;s free to sign up and browse tutors.
             </p>
@@ -114,7 +114,7 @@ export default function Home() {
               </span>
             </div>
 
-            <p className="text-blue-200 text-sm">
+            <p className="text-blue-700 text-sm">
               And many more subjects available with expert tutors
             </p>
           </div>
@@ -159,12 +159,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             {/* Section Heading */}
-            <h2 className="text-4xl font-bold text-white mb-6">
+            <h2 className="text-4xl font-bold text-black mb-6">
               Why Choose AYB Tutoring?
             </h2>
             
             {/* Description */}
-            <p className="text-blue-100 text-lg max-w-3xl mx-auto">
+            <p className="text-blue-700 text-lg max-w-3xl mx-auto">
               Discover how our platform connects you with the perfect tutor for personalized, effective learning.
             </p>
           </div>
@@ -292,12 +292,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             {/* Section Heading */}
-            <h2 className="text-4xl font-bold text-white mb-6">
+            <h2 className="text-4xl font-bold text-black mb-6">
               How AYB Tutoring Works
             </h2>
             
             {/* Description */}
-            <p className="text-blue-100 text-lg max-w-3xl mx-auto">
+            <p className="text-black text-lg max-w-3xl mx-auto">
               Get started in just three simple steps and connect with your ideal tutor today.
             </p>
           </div>
@@ -390,12 +390,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             {/* Section Heading */}
-            <h2 className="text-4xl font-bold text-white mb-6">
+            <h2 className="text-4xl font-bold text-black mb-6">
               What Our Community Says
             </h2>
             
             {/* Description */}
-            <p className="text-blue-100 text-lg max-w-3xl mx-auto">
+            <p className="text-black text-lg max-w-3xl mx-auto">
               Join thousands of students and tutors who have found success through AYB Tutoring.
             </p>
           </div>
