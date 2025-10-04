@@ -54,19 +54,14 @@ const tutorFeatures = [
 ];
 
 export function TutorFeatureCardsWithScrollAnimation() {
-  const refs = tutorFeatures.map(() => React.createRef());
-  const inViews = refs.map(ref => {
-    const [inViewRef, inView] = useInView({ threshold: 0.2 });
-    return { inViewRef, inView };
-  });
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 items-stretch">
       {tutorFeatures.map((feature, idx) => {
-        const { inViewRef, inView } = inViews[idx];
+        const [ref, inView] = useInView({ threshold: 0.2 });
         return (
           <div
             key={feature.title}
-            ref={inViewRef}
+            ref={ref}
             className={`bg-gray-800 rounded-xl p-6 text-white transition-all duration-700 flex flex-col justify-between min-h-[300px] ${inView ? 'animate-fade-in-up opacity-100' : 'opacity-0 translate-y-8'}`}
             style={{ animationDelay: `${idx * 0.1}s` }}
           >
