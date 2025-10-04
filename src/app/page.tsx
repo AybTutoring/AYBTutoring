@@ -1,6 +1,5 @@
 
 import Link from "next/link";
-import { useInView } from "../components/useInView";
 import { FeatureCardsWithScrollAnimation } from "./FeatureCardsWithScrollAnimation";
 
 
